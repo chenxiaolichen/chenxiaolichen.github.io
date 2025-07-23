@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guo Yue - Personal Website</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Guo Yue",
+          "jobTitle": "PhD Candidate in Mathematics",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "National University of Singapore (NUS)"
+          },
+          "url": "https://guoyue-cynthia.github.io/",
+          "sameAs": [
+            "https://github.com/GUOYUE-Cynthia",
+            "https://www.linkedin.com/in/yue-guo-1a6b67192"
+          ]
+        }
+        </script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Navbar Name (Logo or Home link) -->
+            <div class="navbar-name">
+                <a href="#about-me">About Me</a>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <!-- <li><a href="#working-papers">Working Papers</a></li> -->
+                <li><a href="#publications">Publications & Preprints</a></li>
+                <li><a href="#short-cv">Short CV</a></li>
+                <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="section alt">
+        <div class="container">
+            <div class="about-me-content">
+                <!-- Left Side: Profile Picture, Name, and University -->
+                <div class="about-me-left">
+                    <img src="assets/Guo_Yue_photo.jpg" alt="Guo Yue" class="profile-pic">
+                    <h1>Guo Yue (郭 悦)</h1>
+                    <p>
+                        PhD Candidate<br>
+                        Department of Mathematics<br>
+                        National University of Singapore
+                    </p>
+                    <!-- GitHub and Email Icons with Links -->
+                    <div class="social-icons">
+                        <!-- GitHub Icon -->
+                        <a href="https://github.com/GUOYUE-Cynthia" target="_blank">
+                            <i class="fab fa-github"></i> <!-- GitHub Font Awesome Icon -->
+                        </a>
+
+                        <!-- Email Icon -->
+                        <a href="mailto:guoyue@u.nus.edu" target="_blank">
+                            <i class="fas fa-envelope"></i> <!-- Email Font Awesome Icon -->
+                        </a>
+                    </div>
+                </div>
+                <!-- Right Side: About Content -->
+                <div class="about-me-right">
+                    <p>I am a PhD candidate in <a href="https://www.math.nus.edu.sg/" target="_blank">Mathematics, National University of Singapore (NUS)</a>, supervised by <a href="https://blog.nus.edu.sg/qianxiaoli/" target="_blank">Li Qianxiao</a>.</p>
+                    <p>I graduated with a BSc in <a href="https://math.jlu.edu.cn/English/Home.htm" target="_blank">Pure and Applied Mathematics, Jilin University</a> and an MSc in Mathematics, National University of Singapore.</p>
+                    <p>My research areas include machine learning and dynamical systems, particularly focusing on applying neural networks to improve numerical algorithms and integrating Koopman operators with control systems for forward predictions and inverse problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 
+    Working Papers Section
+    <section id="working-papers" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Working Papers</h2>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li><a href="#">Paper 1 Title</a></li>
+                    <li><a href="#">Paper 2 Title</a></li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Publications & Preprints</h2>
+            </div>
+            <div class="section-content">
+                <ul class="publication-list">
+                    <li>
+                        <p><strong class="author">Yue Guo</strong><span class="author">, Milan Korda, Ioannis G Kevrekidis, Qianxiao Li (2025). </span> Learning Parametric Koopman Decompositions for Prediction and Control <em>(SIAM Journal on Applied Dynamical Systems)</em>.</p>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2310.01124">PDF</a>
+                            <a href="https://doi.org/10.1137/23M1604576">DOI</a>
+                            <a href="#" class="cite-link">Cite</a>
+                            <a href="https://github.com/GUOYUE-Cynthia/Learning-Parametric-Koopman-Decompositions">Code</a>
+                            <!-- Others -->
+                        </div>
+                        <!-- BibTeX Modal -->
+                        <div class="bibtex-modal">
+                            <div class="modal-content">
+                                <span class="close-button">&times;</span>
+                                <h3>BibTeX</h3>
+                                <textarea readonly class="bibtex-text">
+@article{guo2023learning,
+    title={Learning parametric koopman decompositions for prediction and control},
+    author={Guo, Yue and Korda, Milan and Kevrekidis, Ioannis G and Li, Qianxiao},
+    journal={arXiv preprint arXiv:2310.01124},
+    year={2023}
+    }
+                                </textarea>
+                                <button class="copy-button">Copy</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p><span class="author"> Danimir T Doncevic, Alexander Mitsos, </span> <strong class="author">Yue Guo</strong><span class="author">, Qianxiao Li, Felix Dietrich, Manuel Dahmen, Ioannis G Kevrekidis (2024). </span> A recursively recurrent neural network (R2N2) architecture for learning iterative algorithms <em>(SIAM Journal on Scientific Computing)</em>.</p>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2211.12386">PDF</a>
+                            <a href="https://epubs.siam.org/doi/abs/10.1137/22M1535310">DOI</a>
+                            <a href="#" class="cite-link">Cite</a>
+                            <!-- <a href="">Code</a> -->
+                            <!-- Others -->
+                        </div>
+                        <!-- BibTeX Modal -->
+                        <div class="bibtex-modal">
+                            <div class="modal-content">
+                                <span class="close-button">&times;</span>
+                                <h3>BibTeX</h3>
+                                <textarea readonly class="bibtex-text">
+@article{doncevic2024recursively,
+    title={A recursively recurrent neural network (r2n2) architecture for learning iterative algorithms},
+    author={Doncevic, Danimir T and Mitsos, Alexander and Guo, Yue and Li, Qianxiao and Dietrich, Felix and Dahmen, Manuel and Kevrekidis, Ioannis G},
+    journal={SIAM Journal on Scientific Computing},
+    volume={46},
+    number={2},
+    pages={A719--A743},
+    year={2024},
+    publisher={SIAM}
+    }
+                                </textarea>
+                                <button class="copy-button">Copy</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p><strong class="author">Yue Guo</strong><span class="author">, Felix Dietrich, Tom Bertalan, Danimir T Doncevic, Manuel Dahmen, Ioannis G Kevrekidis, Qianxiao Li (2022). </span> Personalized Algorithm Generation: A Case Study in Learning ODE Integrators <em>(SIAM Journal on Scientific Computing)</em>.</p>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2105.01303">PDF</a>
+                            <a href="https://epubs.siam.org/doi/abs/10.1137/21M1418629">DOI</a>
+                            <a href="#" class="cite-link">Cite</a>
+                            <a href="https://github.com/GUOYUE-Cynthia/Learning-ODE-Integrators">Code</a>
+                            <!-- Others -->
+                        </div>
+                        <!-- BibTeX Modal -->
+                        <div class="bibtex-modal">
+                            <div class="modal-content">
+                                <span class="close-button">&times;</span>
+                                <h3>BibTeX</h3>
+                                <textarea readonly class="bibtex-text">
+@article{guo2022personalized,
+    title={Personalized algorithm generation: A case study in learning ode integrators},
+    author={Guo, Yue and Dietrich, Felix and Bertalan, Tom and Doncevic, Danimir T and Dahmen, Manuel and Kevrekidis, Ioannis G and Li, Qianxiao},
+    journal={SIAM Journal on Scientific Computing},
+    volume={44},
+    number={4},
+    pages={A1911--A1933},
+    year={2022},
+    publisher={SIAM}
+    }
+                                </textarea>
+                                <button class="copy-button">Copy</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Short CV Section with Timeline -->
+    <section id="short-cv" class="section alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Short CV</h2>
+            </div>
+            <div class="section-content">
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>PhD Candidate</h3>
+                            <p>Mathematics, National University of Singapore, Singapore</p>
+                            <span>2021 - Present</span>
+                            <!-- <p>Responsibilities include:</p>
+                            <ul>
+                                <li>Research on Machine Learning and Dynamical Systems</li>
+                                <li>Teaching Assistant for various courses</li>
+                                <li>Collaboration on international research projects</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>Research Assistant</h3>
+                            <p>Mathematics, National University of Singapore, Singapore</p>
+                            <span>2020-2021</span>
+                            <p>Responsibilities include:</p>
+                            <ul class="custom-square-list">
+                                <li>Maintain and develop the code repository for OnsagerNet model.</li>
+                                <li>Contribute to a collaborative project to compare mathematical models for weather prediction, involving code development and data analysis to evaluate model performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>Master of Science</h3>
+                            <p>Mathematics, National University of Singapore, Singapore</p>
+                            <span>2019-2020</span>
+                            <!-- <p>Responsibilities include:</p>
+                            <ul>
+                                <li>Maintain and develop the code repository for OnsagerNet model.</li>
+                                <li>Contribute to a collaborative project to compare mathematical models for weather prediction, involving code development and data analysis to evaluate model performance.</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science</h3>
+                            <p>Pure and Applied Mathematics, Jilin University, China</p>
+                            <span>2015-2019</span>
+                            <!-- <p>Responsibilities include:</p>
+                            <ul>
+                                <li>Maintain and develop the code repository for OnsagerNet model.</li>
+                                <li>Contribute to a collaborative project to compare mathematical models for weather prediction, involving code development and data analysis to evaluate model performance.</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Download Full CV Link -->
+                <!-- Show th Arrow -->
+                <h2 style="cursor: pointer; font-size: 1.2em; user-select: none;" id="toggle-button" onclick="toggleCV()">► View My Full CV</h2>
+
+                <!-- Hidden Content -->
+                <div id="cv-section" style="display: none; margin-top: 10px;">
+                    <iframe src="https://GUOYUE-Cynthia.github.io/assets/GuoYue-Resume.pdf" width="100%" height="600px"></iframe>
+                    <p>If this cannot be shown, you can download my full CV <a href="https://GUOYUE-Cynthia.github.io/assets/GuoYue-Resume.pdf" target="_blank">here</a>.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll and Navbar Functionality -->
+    <script>
+        // Get all navigation links and sections
+        const links = document.querySelectorAll('.nav-links li a');
+        const sections = document.querySelectorAll('section');
+        const navbarName = document.querySelector('.navbar-name a');
+
+        // Add click event listener to each navigation link
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove 'active' class from all links
+                links.forEach(l => l.classList.remove('active'));
+                // Add 'active' class to the clicked link
+                this.classList.add('active');
+                // Remove 'active' class from navbar name
+                navbarName.classList.remove('active');
+            });
+        });
+
+        // Handle scroll event to highlight navigation links based on scroll position
+        window.addEventListener('scroll', function() {
+            let currentSection = '';
+
+            // Determine the current section in view
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 60;
+                const sectionHeight = section.offsetHeight;
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            // If at the top or in the 'about-me' section, highlight the navbar name
+            if (currentSection === 'about-me' || window.pageYOffset === 0) {
+                navbarName.classList.add('active');
+                links.forEach(link => link.classList.remove('active'));
+            } else {
+                // Otherwise, highlight the corresponding navigation link
+                navbarName.classList.remove('active');
+                links.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+
+        // Add click event to navbar name to scroll to the top smoothly
+        navbarName.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+
+            // BibTeX Modal Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all cite links
+            const citeLinks = document.querySelectorAll('.cite-link');
+
+            citeLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    // Get the publication item
+                    const publicationItem = this.closest('li');
+                    // Get the BibTeX modal
+                    const modal = publicationItem.querySelector('.bibtex-modal');
+                    // Display the modal
+                    modal.style.display = 'block';
+
+                    // Close the modal
+                    const closeButton = modal.querySelector('.close-button');
+                    closeButton.addEventListener('click', function() {
+                        modal.style.display = 'none';
+                    });
+
+                    // Close the modal when clicking outside the modal
+                    window.addEventListener('click', function(event) {
+                        if (event.target === modal) {
+                            modal.style.display = 'none';
+                        }
+                    });
+
+                    // Copy BibTeX to clipboard
+                    const copyButton = modal.querySelector('.copy-button');
+                    const bibtexText = modal.querySelector('.bibtex-text');
+
+                    copyButton.addEventListener('click', function() {
+                        // Select the BibTeX text
+                        bibtexText.select();
+                        bibtexText.setSelectionRange(0, 99999); // For mobile devices
+
+                        try {
+                            // Copy the BibTeX text to clipboard
+                            const successful = document.execCommand('copy');
+                            if (successful) {
+                                alert('BibTeX has been copied to clipboard.');
+                            } else {
+                                alert('Failed to copy BibTeX.');
+                            }
+                        } catch (err) {
+                            alert('Your browser does not support this feature.');
+                        }
+                    });
+                });
+            });
+        });
+
+        // JavaScript show/hide iframe
+        function toggleCV() {
+        var cvSection = document.getElementById('cv-section');
+        var toggleButton = document.getElementById('toggle-button');
+        if (cvSection.style.display === "none") {
+            cvSection.style.display = "block"; // Show
+            toggleButton.innerHTML = "▼ View My Full CV"; // Shift arrow
+        } else {
+            cvSection.style.display = "none"; // Hide
+            toggleButton.innerHTML = "► View My Full CV"; // Shift arrow
+        }
+    }
+
+    </script>
+</body>
+</html>

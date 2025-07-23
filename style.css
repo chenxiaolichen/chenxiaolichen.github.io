@@ -1,0 +1,466 @@
+/* General body and text styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #192340; /* Dark blue background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #0b1227; /* Darker background for the navbar */
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-start; /* Left align the content */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center navbar container */
+    padding: 0 20px;
+}
+
+.navbar-name a {
+    font-size: 1.8em; /* Font size for navbar name */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 50px; /* Add space between name and links */
+}
+
+.navbar-name a.active {
+    color: #e0a96d; /* Highlight color for active name */
+}
+
+.nav-links {
+    list-style-type: none; /* Remove default list styles */
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white; /* Default white text for links */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-links li a:hover {
+    color: #e0a96d; /* Hover effect color */
+}
+
+.nav-links li a.active {
+    color: #e0a96d; /* Highlight color for active links */
+}
+
+/* Section Styles */
+.section {
+    padding: 100px 20px 50px 20px; /* Extra top padding to avoid overlap with navbar */
+    background-color: #0b1227;
+    color: #fff;
+    text-align: left;
+}
+
+.alt {
+    background-color: #192340; /* Alternate background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center align */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px; /* Add padding */
+}
+
+.section-title {
+    flex-basis: 20%; /* Title occupies 20% of the width */
+    text-align: left;
+}
+
+.section-content {
+    flex-basis: 75%; /* Content occupies 75% of the width */
+}
+
+h2 {
+    font-size: 2.5em; /* Section title size */
+    margin-bottom: 20px;
+    color: #ffffff; /* White title color */
+    font-weight: normal;
+}
+
+p, ul {
+    font-size: 1.2em; /* Paragraph and list item font size */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+a {
+    color: #e0a96d; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f1c27d; /* Hover color for links */
+}
+
+/* About Me Section Styles */
+.about-me-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-me-left {
+    flex: 1 1 40%; /* Left side occupies 40% of the container */
+    max-width: 40%;
+    margin-right: 20px; /* Add space between left and right sides */
+    text-align: center;
+    padding-top: 60px; 
+}
+
+.about-me-right {
+    flex: 1 1 55%; /* Right side occupies 55% of the container */
+    max-width: 55%;
+    padding-top: 60px; 
+}
+
+/* Profile picture styles */
+.profile-pic {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Max width for the profile picture */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
+/* Timeline Section Styles */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item .timeline-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #e0a96d; /* Timeline dot color */
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0;
+}
+
+.timeline-item .timeline-content {
+    background-color: #3f4042;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 40px;
+    width: calc(100% - 40px);
+    color: #fff;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #e0a96d;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    margin-left: -1px;
+}
+
+h3 {
+    font-size: 25px;
+    color: #e0a96d; /* Color for timeline headings */
+    margin-top: 10px;
+}
+
+/* Publications Section Styles */
+.publication-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publication-list li {
+    margin-bottom: 20px; /* Space between each publication */
+}
+
+.publication-list p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #b0b0b0; /* Gray color for publication titles */
+}
+
+.publication-list p .author {
+    color: #ffffff; /* Author names in white */
+}
+
+.pub-links {
+    margin-top: 10px;
+}
+
+.pub-links a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #e0a96d; /* Gold border for publication links */
+    border-radius: 5px; /* Rounded corners */
+    color: #e0a96d; /* Gold text for publication links */
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.pub-links a:hover {
+    background-color: #e0a96d; /* Background turns gold on hover */
+    color: #192340; /* Dark text on hover */
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: #0b1227;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #e0a96d;
+    margin: 0 10px;
+}
+
+/* BibTeX Modal Styles */
+.bibtex-modal {
+    display: none; /* Default hide */
+    position: fixed;
+    z-index: 200; /* Show on the first */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* If over the bound, then use the scroll */
+    background-color: rgba(0,0,0,0.7); /* Transparent background*/
+}
+
+.modal-content {
+    background-color: #3f4042;
+    margin: 10% auto; /* show in the window */
+    padding: 20px;
+    border: 1px solid #e0a96d;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    color: #fff;
+}
+
+.close-button {
+    color: #e0a96d;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #f1c27d;
+}
+
+.bibtex-text {
+    width: 100%;
+    height: 200px;
+    background-color: #192340;
+    color: #fff;
+    border: 1px solid #e0a96d;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.copy-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #e0a96d;
+    border-radius: 5px;
+    color: #e0a96d;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #e0a96d;
+    color: #192340;
+}
+
+
+/* Indexed List Styles */
+.indexed-list {
+    list-style: none; /* Remove the defaulted*/
+    counter-reset: list-counter; /* Initialize */
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.indexed-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px; /* Adjust if needed */
+}
+
+.indexed-list li::before {
+    content: counter(list-counter) ". ";
+    counter-increment: list-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: #e0a96d;
+}
+
+/* Custom Square List Styles */
+.custom-square-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.custom-square-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+.custom-square-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: #e0a96d;
+}
+
+/* Social icon styles */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 24px; /* Adjust icon size */
+    color: #e0a96d; /* Default icon color */
+}
+
+.social-icons a:hover {
+    color: #f1c27d; /* Hover effect color */
+}
+
+@media (max-width: 768px) {
+    /*Adjust the navigator*/
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .nav-links li a {
+        font-size: 1em;
+    }
+
+    /*Adjust container*/
+    .container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    /*Adjust aboutme*/
+    .about-me-content {
+        flex-direction: column;
+    }
+    .about-me-left, .about-me-right {
+        max-width: 100%;
+        margin-right: 0;
+        padding-top: 20px;
+    }
+
+    /* Adjust titles */
+    h2 {
+        font-size: 2em;
+    }
+    p, ul {
+        font-size: 1em;
+    }
+
+    /* Adjust timeline */
+    .timeline-item .timeline-content {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .timeline-item::before {
+        left: -10px;
+    }
+
+    /* Adjust publictions */
+    .publication-list li {
+        font-size: 1em;
+    }
+    .pub-links a {
+        font-size: 0.8em;
+    }
+
+    /* Adjust links */
+    .pub-links a, .copy-button {
+        font-size: 0.9em;
+        padding: 5px 8px;
+    }
+
+    /* Adjust social logos */
+    .social-icons a {
+        font-size: 20px;
+    }
+}
